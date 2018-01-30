@@ -1,6 +1,9 @@
 package ACautomaton
 
 func Check(msg string) bool {
+	if acMap == nil {
+		return false
+	}
 	m := []rune(msg)
 	for index, word := range m {
 		if _, ok := acMap.child[word]; ok {
