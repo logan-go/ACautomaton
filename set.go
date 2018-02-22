@@ -2,11 +2,12 @@ package ACautomaton
 
 var acMap *node
 
+//输入需要匹配的内容列表
 func SetList(list []string) {
+	acMap = &node{}
 	if len(list) == 0 {
 		return
 	}
-	acMap = &node{}
 
 	for _, words := range list {
 		currNode := acMap

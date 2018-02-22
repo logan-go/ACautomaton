@@ -1,5 +1,6 @@
 package ACautomaton
 
+//对一条string内容检查是否有已设置的内容存在
 func Check(msg string) bool {
 	if acMap == nil {
 		return false
